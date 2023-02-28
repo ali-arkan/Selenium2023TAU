@@ -11,6 +11,7 @@ public class LoginTests extends BaseTests {
      public void testSuccessfulLogin()
      {
 
+
          LoginPage loginPage= homePage.ClickformAuth();
          loginPage.setUsername("tomsmith");
          loginPage.setPassword("SuperSecretPassword!");
