@@ -19,11 +19,13 @@ public class BaseTests {
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://the-internet.herokuapp.com/");
-
         homePage = new HomePage(driver);
 
     }
-
+        /*
+        Test 1: LoginTests
+        Test 2: DropDownPage
+         */
 
 
     @AfterClass
