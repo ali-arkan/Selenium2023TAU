@@ -24,7 +24,7 @@ public class DropdownTests  extends BaseTests {
         //From the Home page, we’re going to click on the Dropdown link
         var dropDownPage = homePage.ClickDropDown();
 
-        // Then we are going to select an option from the dropdown
+        // Then we are going to select an option from the dropdown, test
         String option = "Option 2";
         dropDownPage.selectFromDropDown(option);
 
