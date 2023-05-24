@@ -16,11 +16,9 @@ public class ShiftingContent {
 
     public void setUp() {
 
-        String chrome_path = "resources\\chromedriver.exe";
-        System.setProperty("webdriver.chrome.driver", chrome_path);
 
-        //System.setProperty("webdriver.chrome.driver", getClass().getResource(chrome_path).getPath());
-        //WebDriverManager.chromedriver().setup();
+        System.setProperty("webdriver.chrome.driver", "resources\\chromedriver.exe");
+
 
         driver = new ChromeDriver();
         driver.manage().window().maximize();
