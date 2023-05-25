@@ -4,12 +4,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+
 import pages.HomePage;
 
 public class BaseTests {
 
     private WebDriver driver;
-    protected HomePage homePage;
+    protected HomePage homePage; // New Homepage is initializing...
 
 
     @BeforeClass
@@ -18,20 +19,9 @@ public class BaseTests {
         driver = new ChromeDriver();
         driver.get("https://the-internet.herokuapp.com/");
 
-        homePage = new HomePage(driver);
-
-
-        driver.quit();
-
-
+        homePage = new HomePage(driver); // chrome driver is passing to HomePage
     }
 
-    public static void main(String args[])
-    {
-        BaseTests test = new BaseTests();
-
-
-    }
 
     @AfterClass
     public void tearDown()
